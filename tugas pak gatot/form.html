@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belajar Form</title>
+  <style>
+    body {
+      background-color: rgb(114, 84, 64);
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid #6f4f28; /* Warna coklat */
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+    }
+    input[type="text"], input[type="date"], textarea, select {
+      border: 1px solid #6f4f28; /* Warna coklat */
+      border-radius: 4px;
+      padding: 8px;
+      margin-bottom: 10px;
+      width: calc(100% - 18px); /* Adjust width for padding and border */
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    button {
+      background-color: #6f4f28; /* Warna coklat */
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #8b6d4e; /* Warna coklat lebih gelap saat hover */
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1>Biodata</h1>
+  
+  <form>
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" /><br />
+    
+    <label for="tanggalLahir">Tanggal Lahir</label>
+    <input type="date" id="tanggalLahir" name="tanggalLahir" /><br />
+    
+    <label>Jenis</label><br />
+    <input type="radio" id="Laki-laki" name="Jenis" value="Laki-laki" />
+    <label for="Laki-laki">Laki-laki</label><br />
+    <input type="radio" id="Perempuan" name="Jenis" value="Perempuan" />
+    <label for="Perempuan">Perempuan</label><br />
+    
+    <label for="alamat">Alamat</label><br />
+    <textarea id="alamat" name="alamat"></textarea><br />
+    
+    <label for="pendidikan">Pendidikan</label>
+    <select name="Pendidikan" id="pendidikan">
+      <option value="kosong"></option>
+      <option value="SD">SD</option>
+      <option value="SMP">SMP</option>
+      <option value="SMA">SMA</option>
+      <option value="S1">S1</option>
+    </select><br /><br />
+    
+    <button><a href="home.html">simpan</a></button>
+  </form>
+  </form>
+</body>
+</html>

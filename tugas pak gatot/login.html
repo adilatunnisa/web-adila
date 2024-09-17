@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belajar Form</title>
+  <style>
+    body {
+      background-color: rgb(114, 84, 64);
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type="text"] {
+      padding: 8px;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+    input[type="text"]:focus {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: rgb(114, 84, 64);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: rgb(140, 100, 80);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login</h1>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" id="username" /><br />
+    <label for="password">Password</label>
+    <input type="text" id="password" /><br />
+    <button><a href="home.html">Login</a></button>
+  </form>
+</body>
+</html>
